@@ -1,0 +1,10 @@
+apiVersion: consul.hashicorp.com/v1alpha1
+kind: ServiceRouter
+metadata:
+  name: counting
+  namespace: default
+spec:
+  routes:
+  - destination:
+    service: counting
+    requestTimeout: 0s
