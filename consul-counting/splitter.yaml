@@ -1,0 +1,11 @@
+apiVersion: consul.hashicorp.com/v1alpha1
+kind: ServiceSplitter
+metadata:
+  name: counting
+  namespace: default
+spec:
+  splits:
+  - service: counting
+    weight: 100
+  - service: dashboard
+    weight: 0
