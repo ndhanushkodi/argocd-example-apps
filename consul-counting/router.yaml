@@ -6,5 +6,4 @@ metadata:
 spec:
   routes:
   - destination:
-    service: counting
-    requestTimeout: 0s
+      service: counting
